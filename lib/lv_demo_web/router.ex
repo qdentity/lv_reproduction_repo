@@ -18,6 +18,8 @@ defmodule LvDemoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    live "/demo", DemoLive, :index
   end
 
   # Other scopes may use custom stacks.
