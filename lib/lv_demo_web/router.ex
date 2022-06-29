@@ -20,6 +20,7 @@ defmodule LvDemoWeb.Router do
     get "/", PageController, :index
 
     live "/demo", DemoLive, :index
+    live "/demo/item", Demo2Live, :index
   end
 
   # Other scopes may use custom stacks.
