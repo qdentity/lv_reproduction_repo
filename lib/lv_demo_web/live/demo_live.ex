@@ -18,6 +18,7 @@ defmodule LvDemoWeb.DemoLive do
   def render(assigns) do
     ~H"""
     <div>
+      <.link navigate={Routes.demo_path(LvDemoWeb.Endpoint, :index)}>Home</.link>
       <%= for i <- 0..@limit do %>
         <%= live_redirect to: Routes.demo2_path(LvDemoWeb.Endpoint, :index) do %>
           <div>item <%= i %></div>
