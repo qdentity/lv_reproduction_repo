@@ -36,6 +36,7 @@ defmodule LvDemo.MixProject do
       {:phoenix, github: "phoenixframework/phoenix", override: true},
       {:phoenix_view, github: "phoenixframework/phoenix_view", override: true},
       {:phoenix_html, "~> 3.0"},
+      {:phoenix_template, github: "phoenixframework/phoenix_template", override: true},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, github: "qdentity/phoenix_live_view", branch: "fix-patch-scroll", override: true},
       {:floki, ">= 0.30.0", only: :test},
